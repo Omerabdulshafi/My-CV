@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+header{
+    padding: 10px; background-color: darkslategrey; height: 35px; font-size: 30px;
+}
+button{
+    float:center; font-size: 28px; color: chocolate; background-color: darkgreen;
+}
+img{
+    border-radius: 100%; width: 300px; float: right; 
+    background-color: rgb(13, 62, 134);
+}
+a{
+    color: chocolate;
+}
+#about{ width: 100%; font-size: 24px;
+    background-color: rgb(47, 77, 0); float:left;
+}
+
+#skill{ 
+    width: 100%; font-size: 24px;
+    background-color: rgb(177, 214, 117); float:left;
+}
+
