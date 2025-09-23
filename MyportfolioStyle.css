@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+font-size: 20px;
 }
 
 
@@ -8,7 +8,7 @@ ul {
   display: flex;
   position: fixed;
   background-image: url(./image/IMG_20250618_163651_446.jpg);
-  width: 80%;
+  width:100%;
   margin-left: 5%;
   padding-left: 100px;
   margin-top: 0;
@@ -58,12 +58,88 @@ color: blue;
 #skill {
     width: 100%;
     font-size: 24px;
-    background-color: rgb(177, 214, 117);
-    border-radius: 30px;
+    justify-items: center;
+}
+#skill img{
+    width: 100px;
 }
 #project{
     background-color: aquamarine;
 }
+#services img{
+    width: 100%;
+}
+
 #services{
-    background-color: rgb(155, 98, 14);
+    justify-items: center;
+}
+#services h1{
+    color: blue;
+    margin-right: 10px;
+}
+#contact{ 
+    justify-items: center;
+
+}
+#contact h1{
+    color: blue;
+}
+#contact h2{
+    color: blue;
+}
+#contact p{
+margin-right: 10px;
+}
+#contact form input{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+ #contact #subject{
+    width: 910px;
+} 
+#message{
+    width: 910px;
+    height: 150px;
+    border-radius: 10px;
+}
+#contact button{
+    border-radius: 10px;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+}
+#login{
+    justify-items: center;
+}
+#login form input{
+width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+#login button{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: rgb(30, 48, 2);
+    color: white;
+    border-radius: 10px;
+}
+#sing{
+    justify-items: center;
+}
+#sing form input{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+#sing button{
+       width: 400px;
+    height: 50px;
+    border: none;
+    background-color: rgb(30, 48, 2);
+    color: white;
+    border-radius: 10px;
 }
