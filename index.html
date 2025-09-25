@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./MyportfolioStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav> 
+    <nav class="navbar"> 
         <ul>             
         <li> <a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -16,20 +16,26 @@
         <li><a href="#project">Project</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#blog">Blogs</a></li>
-        <li><a href="#contact">Contact</a></li> 
-        <li><a href="#login">Login</a></li> 
-        <li><a href="#sing">SingUp</a></li> 
+        <li><a href="./contact.html">Contact</a></li> 
+        <li><a href="./login.html">Login</a></li> 
+        <li><a href="./singup.html">SingUp</a></li> 
          </ul>
     </nav>
     <div class="home" id="home">
-     <div class=""><h1>Hello <br> I'm OMER ABDULSHAFI </h1>
-        <p></p>
+     <div class=""><h1>Hello <br> I'm <span>OMER</span> ABDULSHAFI </h1>
+        <p> Web <span>Designer </span> and Developer</p>
+       <a href="https://github.com/Omerabdulshafi/">
+         <i class="fa-brands fa-github"></i></a>
+         <a href="https://www.facebook.com/omerAbdulshafi">
+            <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/omer-abdulshafi-a689672a8/">
+        <i class="fa-brands fa-linkedin"></i></a>
 </div>
-        <div class=""><img src="./image/IMG_20250924_155652_775-removebg-preview.png" alt=""> </div>
+        <div class="img"><img src="./image/IMG-20250827-WA0000-removebg-preview.png" alt=""> </div>
     
     </div>
     <section id="about">
-        <img src="./image/CamScanner_07-28-2025_14.17-removebg-preview__1_-removebg-preview.png"> 
+        <img src="./image/CamScanner_07-28-2025_14.17-removebg-preview.png"> 
 <h1>About Me</h1>
 <p>    
 Hi! I'm Omer Abdulshafi, <br>
@@ -41,7 +47,7 @@ with a strong interest in building solutions that improve community <br>
 I believe in the power of combining data, code, <br> and compassion to 
 create meaningful change.
    <br><br><br><br><br>
-<a href="./cv.html"> My CV</a></p> 
+<button><a href="./cv.html"> My CV</a> </button></p> 
 </section>
 <section id="skill">
     <h1>Skills:</h1>
@@ -84,57 +90,42 @@ Instant calculation and health status display</p></div>
 </section>
 <section id="services"> 
     <h1>Services:</h1>
-<p><img src="./image/service.png" alt=""></p>
+    <div class="">
+        <p><img src="./image/mobile(1).png" alt="">
+        mobile & web Application
+        </p>
+        <p>Database & API Services</p>
+    </div>
+<div class="health">
+    <p><img src="./image/health education.jpg" alt="">
+Health Education & Aweraness
+    </p>
+<p>Public Health Services </p>
+<p>Health & Safe ty</p>
+</div>
 </section>
 <section id="blog">
     <h1>Blogs</h1>
-    <p></p>
+     <div class="card">
+        <img src="./image/blog.jpeg" alt="">
+      <h3>Web Development</h3>
+      <p>Learn HTML, CSS, JavaScript, and how to build full-stack applications. Step-by-step tutorials and project ideas for beginners and beyond.</p>
+    </div>
+
+    <div class="card">
+        <img src="./image/blog2.jpg" alt="">
+      <h3> Health & Wellness</h3>
+      <p>Explore public health tips, mental wellness, community health stories, and ways technology can support better health outcomes.</p>
+    </div>
+     <div class="card">
+        <img src="./image/blog3.jpeg" alt="">
+      <h3>Tech for Health</h3>
+      <p>Discover how digital tools, apps, and websites can improve healthcare access and awareness in communities.</p>
+    </div>
 </section>
-<section id="contact">
-    <h1>Contacts</h1>
-    <p>
-<i class="fa-solid fa-location-dot"></i>
-Mahama Refugee comp -Rwanda
-<i class="fa-solid fa-phone-volume"></i>
-+250725191529
-<i class="fa-solid fa-envelope"></i>
-omarabdulshafa8@gmail.com
-    </p>
-    <h2> Contact from: </h2>
-    <form action="">
-        <label for="">Frist Name</label><br>
-        <input type="text" id="name" required>
-        <label for="">Last Name</label>
-        <input type="text" id="lastname"><br>
-        <label for="">Subject</label><br>
-        <input type="text" id="subject"> <br> <br>
-        <label for="">Message</label> <br>
-        <textarea name="message" id="message" placeholder="write your questions or notes hear......"></textarea>
-       <br>  
-        <button>Sand Message</button>
-    </form>
-</section>
-<section id="login">
-    <h1>Login:</h1>
-    <form action="">
-        <label for=""> </label> 
-        <input type="email" placeholder="Your Email*"> <br><br>
-        <label for=""></label>
-        <input type="password" placeholder="Password*"><br><br>
-        <input type="submit" value="login" id="lo">
-    </form>
-</section>
-<section id="sing">
-    <h1>Sing Up</h1>
-    <form action="">
-        <input type="text" placeholder="Frist Name*"><br><br>
-        <input type="text" placeholder="Last Name*"><br><br>
-        <input type="email" placeholder="Your Email*"><br><br>
-        <input type="tel" placeholder="Your phone*"><br><br>
-        <input type="password" placeholder="Password*"><br><br>
-        <input type="submit" value="sing up" id="si">
-    </form>
-</section>
+
+
+
 <footer></footer>
 </body>
 </html>
