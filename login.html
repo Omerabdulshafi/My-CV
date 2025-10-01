@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="./MyportfolioStyle.css">
 </head>
 <body>
-    <section id="login">
-    <h1>Login:</h1>
-    <form action="">
-        <label for=""> </label> 
-        <input type="email" placeholder="Your Email*"> <br><br>
-        <label for=""></label>
-        <input type="password" placeholder="Password*"><br><br>
-        <input type="submit" value="login" id="lo">
-    </form>
-</section>
+    <section class="container" id="login-section">
+        <div id="login-form">
+            <h2>Login:</h2>
+            <form action="" method="POST">
+                <input type="email" placeholder="Your Email*" required> 
+                <input type="password" placeholder="Password*" required>
+                <input type="submit" value="Login" id="lo">
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>

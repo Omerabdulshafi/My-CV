@@ -1,131 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Omer Abdulshafi | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./MyportfolioStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <nav class="navbar"> 
-        <ul>             
-        <li> <a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skill">Skills </a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#blog">Blogs</a></li>
-        <li><a href="./contact.html">Contact</a></li> 
-        <li><a href="./login.html">Login</a></li> 
-        <li><a href="./singup.html">SingUp</a></li> 
-         </ul>
-    </nav>
-    <div class="home" id="home">
-     <div class=""><h1>Hello <br> I'm <span>OMER</span> ABDULSHAFI </h1>
-        <p> Web <span>Designer </span> and Developer</p>
-       <a href="https://github.com/Omerabdulshafi/">
-         <i class="fa-brands fa-github"></i></a>
-         <a href="https://www.facebook.com/omerAbdulshafi">
-            <i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/omer-abdulshafi-a689672a8/">
-        <i class="fa-brands fa-linkedin"></i></a>
-</div>
-        <div class="img"><img src="./image/IMG-20250827-WA0000-removebg-preview.png" alt=""> </div>
-    
-    </div>
-    <section id="about">
-        <img src="./image/CamScanner_07-28-2025_14.17-removebg-preview.png"> 
-<h1>About Me</h1>
-<p>    
-Hi! I'm Omer Abdulshafi, <br>
-a curious and driven student passionate about using <br>
-technology to solve real-world health challenges. <br>
-I'm currently studying web development and public health, <br> 
-with a strong interest in building solutions that improve community <br>
- well-being and healthcare accessibility. <br>
-I believe in the power of combining data, code, <br> and compassion to 
-create meaningful change.
-   <br><br><br><br><br>
-<button><a href="./cv.html"> My CV</a> </button></p> 
-</section>
-<section id="skill">
-    <h1>Skills:</h1>
-        <h2>Programming & Tech:</h2>
-    <div class="">HTML <img src="./image/HTML5_logo_and_wordmark.svg.png" alt="HTML"> </div>
-      <div class=""></div>  CSS  <img src="./image/css.jpeg" alt=" CSS" > </div>
-<div class="">Git, GitHub<img src="./image/git.webp" alt="Git, GitHub"> </div>
- <div class="">VS Code <img src="./image/vsc-01.jpg" alt="VS Code"></div>
-
-<div class="">
-<h2>Public Health:</h2>
- <p>-Community outreach <br>
--Survey design and data collection <br>
--Report writing and health education</p>
-</div>
-</section>
-
-<section id="project">
-    <h1>Project:</h1>
-    <div class="p1">
-        <img src="./image/kpi_dashboard_main.png" alt="">
-        1. Health Data Dashboard
-A web-based dashboard for visualizing public health data.Tech: <br>Python, Pandas, Plotly, HTML/CSS
-Visualizes data on disease spread or vaccination coverage
-User-friendly charts and filters for deeper insights</p></div>
-<div class="p2">
-    <img src="./image/personal p.jpg" alt="">
-<p>2. Personal Portfolio Website
-This website!Tech: <br>HTML, CSS, JavaScript
-Responsive design
-Showcases my bio, skills, and projects
-Clean, minimal, and professional layout</p>
-</div>
-<div class="p3">
-    <img src="./image/BMI-Chart.webp" alt="">
-<p>3. Simple Web App: <br>BMI Calculator
-Tool to calculate Body Mass Index with health tips.Tech: <br>JavaScript, HTML, CSS
-Interactive form
-Instant calculation and health status display</p></div>
-</section>
-<section id="services"> 
-    <h1>Services:</h1>
-    <div class="">
-        <p><img src="./image/mobile(1).png" alt="">
-        mobile & web Application
-        </p>
-        <p>Database & API Services</p>
-    </div>
-<div class="health">
-    <p><img src="./image/health education.jpg" alt="">
-Health Education & Aweraness
-    </p>
-<p>Public Health Services </p>
-<p>Health & Safe ty</p>
-</div>
-</section>
-<section id="blog">
-    <h1>Blogs</h1>
-     <div class="card">
-        <img src="./image/blog.jpeg" alt="">
-      <h3>Web Development</h3>
-      <p>Learn HTML, CSS, JavaScript, and how to build full-stack applications. Step-by-step tutorials and project ideas for beginners and beyond.</p>
+    <div class="navigation">
+        <div class="logo">
+            <a href="#home" style="color: var(--primary-color); font-size: 1.5rem; font-weight: bold;">Omer</a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <ul class="navbarl">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./singup.html">Sign Up</a></li>
+        </ul>
     </div>
 
-    <div class="card">
-        <img src="./image/blog2.jpg" alt="">
-      <h3> Health & Wellness</h3>
-      <p>Explore public health tips, mental wellness, community health stories, and ways technology can support better health outcomes.</p>
-    </div>
-     <div class="card">
-        <img src="./image/blog3.jpeg" alt="">
-      <h3>Tech for Health</h3>
-      <p>Discover how digital tools, apps, and websites can improve healthcare access and awareness in communities.</p>
-    </div>
-</section>
+    <section class="home" id="home">
+        <div class="intro-text">
+            <h1>Hello <br> I'm <span>OMER</span> ABDULSHAFI </h1>
+            <p> Web <span>Designer </span> and Developer</p>
+            <div class="social-icons">
+                <a href="https://github.com/Omerabdulshafi/" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/omerAbdulshafi" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omer-abdulshafi-a689672a8/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="./image/IMG-20250827-WA0000-removebg-preview.png" alt="Omer Abdulshafi Profile Picture">
+        </div>
+    </section>
 
+    <section class="container" id="about">
+        <div class="profile">
+            <img src="./image/CamScanner_07-28-2025_14.17-removebg-preview.png" alt="Omer Abdulshafi">
+        </div>
+        <div class="intro">
+            <h1>About me </h1>
+            <p>Hi! I'm Omer Abdulshafi,
+                a curious and driven student passionate about using
+                technology to solve real-world health challenges.
+                I'm currently studying web development and public health,
+                with a strong interest in building solutions that improve community <br>
+                well-being and healthcare accessibility.
+                I believe in the power of combining data, code, and compassion to
+                create meaningful change.</p>
+            <div><button><a href="./cv.html" target="_blank"> My CV</a> </button></div>
+        </div>
+    </section>
 
+    <section class="container" id="skill">
+        <div class="skl">
+            <h1>Skills:</h1>
 
-<footer></footer>
+            <div>
+                <h2>Programming & Tech:</h2>
+            </div>
+            <div class="s1">
+                <div class="myskill"><img src="./image/HTML5_logo_and_wordmark.svg.png" alt="HTML"> HTML </div>
+                <div class="myskill"><img src="./image/css.jpeg" alt="CSS"> CSS </div>
+                <div class="myskill"><img src="./image/git.webp" alt="Git and GitHub">Git, GitHub</div>
+                <div class="myskill"> <img src="./image/vsc-01.jpg" alt="VS Code">VS Code</div>
+            </div>
+
+            <div>
+                <h2>Public Health:</h2>
+                <p>
+                    - Community outreach <br>
+                    - Survey design and data collection <br>
+                    - Report writing and health education
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="project">
+        <h1>Projects:</h1>
+        <div class="p1">
+            <img src="./image/kpi_dashboard_main.png" alt="Health Data Dashboard Screenshot">
+            <p>1. Health Data Dashboard
+                A web-based dashboard for visualizing public health data.
+                Tech: Python, Pandas, Plotly, HTML/CSS
+                Visualizes data on disease spread or vaccination coverage, with user-friendly charts and filters for
+                deeper insights.
+            </p>
+        </div>
+        <div class="p1">
+            <img src="./image/personal p.jpg" alt="Personal Portfolio Website Screenshot">
+            <p>2.Personal Portfolio Website
+                This website!
+                Tech: HTML, CSS, JavaScript
+                Responsive design, showcasing my bio, skills, and projects with a clean, minimal, and professional
+                layout.
+            </p>
+        </div>
+        <div class="p1">
+            <img src="./image/BMI-Chart.webp" alt="BMI Calculator App Screenshot">
+            <p>3. Simple Web App: BMI Calculator
+                Tool to calculate Body Mass Index with health tips.
+                Tech: JavaScript, HTML, CSS
+                Interactive form providing instant calculation and health status display.
+            </p>
+        </div>
+    </section>
+
+    <section class="container" id="services">
+        <h1>Services:</h1>
+        <div class="health">
+            <p><img src="./image/mobile(1).png" alt="Mobile icon">
+                Mobile & Web Application
+            </p>
+            <p>Database & API Services</p>
+        </div>
+        <div class="health">
+            <p><img src="./image/health education.jpg" alt="Health icon">
+                Health Education & Awareness
+            </p>
+            <p>Public Health Services </p>
+            <p>Health & Safety</p>
+        </div>
+    </section>
+
+    <section class="container" id="blog">
+        <h1>Blogs</h1>
+        <div>
+            <div class="card">
+                <img src="./image/blog.jpeg" alt="Web Development Code Image">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript, and how to build full-stack applications. Step-by-step tutorials and
+                    project ideas for beginners and beyond.</p>
+            </div>
+            <div class="card">
+                <img src="./image/blog2.jpg" alt="Health and Wellness Image">
+                <h3> Health & Wellness</h3>
+                <p>Explore public health tips, mental wellness, community health stories, and ways technology can
+                    support better health outcomes.</p>
+            </div>
+            <div class="card">
+                <img src="./image/blog3.jpeg" alt="Tech for Health Image">
+                <h3>Tech for Health</h3>
+                <p>Discover how digital tools, apps, and websites can improve healthcare access and awareness in
+                    communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h1>Contacts:</h1>
+        <div class="icon">
+            <div class="icon-group">
+                <p class="contact-info">
+                    <i class="fa-solid fa-location-dot"></i> Mahama Refugee Camp - Rwanda
+                </p>
+                <p class="contact-info">
+                    <i class="fa-solid fa-phone-volume"></i> +250725191529
+                </p>
+                <p class="contact-info">
+                    <i class="fa-solid fa-envelope"></i> omarabdulshafa8@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <form action="" method="POST">
+            <h2> Contact Form </h2>
+            <div class="name">
+                <div class="names">
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="firstName" required>
+                </div>
+                <div class="names">
+                    <label for="lastname" class="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastName">
+                </div>
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Write your questions or notes here......"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+                <a href="https://github.com/Omerabdulshafi/" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/omerAbdulshafi" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/omer-abdulshafi-a689672a8/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        <p>&copy; 2025 Omer Abdulshafi. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
