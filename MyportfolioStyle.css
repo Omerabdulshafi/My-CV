@@ -176,7 +176,9 @@
         .home .img img:hover {
              /* Scale and slight rotate */
             box-shadow: 0 15px 40px rgba(0, 123, 255, 0.5); /* Primary color shadow on hover */
+        transform: translateY(-2px); 
         }
+
 
         /* Icon Styling and Hover Effect for Social Media */
         .home .social-icons a {
@@ -226,7 +228,10 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-
+.profile img:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(67, 98, 145, 0.2);
+}
         .intro h1 {
             color: var(--primary-color);
             font-size: 2.5rem;
@@ -323,7 +328,7 @@
             color: var(--dark-color);
             margin-bottom: 2rem;
         }
-
+ 
         #project .p1 {
             background-color: var(--white-color);
             border-radius: 8px;
@@ -429,6 +434,8 @@
             overflow: hidden;
             width: 300px;
             text-align: left;
+            padding: 15px;
+            margin: 10px;
             transition: transform var(--transition-speed), box-shadow var(--transition-speed);
         }
 
@@ -520,6 +527,15 @@
 
         input[type="text"], textarea {
             width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: var(--font-family);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+           input[type="email"], textarea {
+            width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
@@ -573,6 +589,16 @@
             max-width: 400px;
             margin: 2rem auto;
             text-align: center;
+        }
+        #sing input{
+              width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: var(--font-family);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        
         }
         
         #login-form h2, #signup-form h2 {
