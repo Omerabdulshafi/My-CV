@@ -308,6 +308,7 @@
         
         .myskill:hover {
             box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+        transform: translate(5px);
         }
 
         .myskill img {
@@ -343,6 +344,7 @@
         
         #project .p1:hover {
             box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+        transform: translate(5px);
         }
 
         #project .p1 img {
@@ -441,6 +443,7 @@
 
         .card:hover {
             box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+        transform: translate(5px);
         }
 
         .card img {
@@ -642,4 +645,7 @@
             text-align: center;
             padding: 1rem;
             font-size: 0.9rem;
+        }
+        footer a{
+            color: aqua;
         }
