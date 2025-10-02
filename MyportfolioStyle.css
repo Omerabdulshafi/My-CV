@@ -25,7 +25,6 @@
 
         a {
             text-decoration: none;
-            color:b
             transition: color var(--transition-speed);
         }
 
@@ -170,12 +169,12 @@
             border-radius: 50%;
              /* Added a border */
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+            transition: transtransition-speed var(--transition-speed);
         }
         
         /* Great Hover Effect for Image */
         .home .img img:hover {
-            transform: scale(1.05) rotate(2deg); /* Scale and slight rotate */
+             /* Scale and slight rotate */
             box-shadow: 0 15px 40px rgba(0, 123, 255, 0.5); /* Primary color shadow on hover */
         }
 
@@ -278,7 +277,7 @@
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
-            max-width: fit-content;
+            
         }
 
         .s1 {
@@ -303,7 +302,6 @@
         }
         
         .myskill:hover {
-            transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
         }
 
@@ -435,7 +433,6 @@
         }
 
         .card:hover {
-            transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
         }
 

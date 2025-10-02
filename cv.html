@@ -6,100 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <style>
-      header{
-background-color: #666;
-  padding: 10px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
+      * {
+          box-sizing: border-box;
+          /* Use Inter for a clean, modern look */
+          font-family: Arial, Helvetica, sans-serif; 
+          color: #333; 
+          margin: 0;
+          padding: 0;
       }
-      h1{color: aqua;
+      body {
+          line-height: 1.6;
+          background-color: #f7f7f7; /* Very light background */
+      }
+      hr {
+          border-color: rgba(255, 255, 255, 0.3);
+          margin: 10px 0;
+      }
 
+      /* 2. Header and Profile Image */
+      .header {
+          background-color: #2b394f; /* Deep Navy Blue for professionalism */
+          padding: 30px 20px;
+          text-align: center;
+          justify-content:center ;
+          color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       }
-      img{
-        width:200px; border-radius:100%; float: left;
+      h1 {
+          color: #04800a; /* Gold/Amber accent for contrast */
+          font-size: 1.8rem;
+          font-weight: 700;
+          display: flex;
+          flex-direction: column; /* Stacked on mobile by default */
+          align-items: center;
+          gap: 15px;
       }
-    section{
-      display: table; after content: clear: both;
-    }
-    nav{
-      float: left; padding: 10px; width: 30%; height: 300px;
-    }
-    h2{
-      color: rgba(0, 4, 255, 0.822);
-    }
-    article{float:right;
-  padding: 20px;
-  width: 800px;
-  background-color: #3704f015;
-  height:px; 
+      img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          border: 4px solid #dbbe68;
+          object-fit: cover;
+          float: left;
+      }
+
+      /* 3. Main Layout (Mobile First - Stacking) */
+      section {
+          display: flex;
+          flex-direction: column; /* Default: Stack vertically for mobile */
+          gap: 25px; 
+          max-width: 1000px;
+          margin: 30px auto;
+          padding: 0 20px;
+      }
       
-    }
-    footer{background-color: #504b4b;
-  padding: 20px;
-  text-align: center;
-  color: white
+      nav, article {
+          padding: 25px;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          width: 100%; 
+          height: auto;
+      }
 
-    }
+      nav {
+          background-color: #ffffff; /* White background for sidebar */
+      }
+      article {
+          background-color: #ffffff; /* White background for main content */
+          border-left: 5px solid #2b394f; /* Accent line using primary color */
+      }
+
+      /* 4. Content Typography */
+      h2 {
+          color: #2b394f; /* Dark color for section headings */
+          margin-top: 15px;
+          margin-bottom: 8px;
+          padding-bottom: 5px;
+          font-size: 1.35rem;
+          font-weight: 600;
+      }
+      /* Ensure crimson contact info style is honored */
+      h2[style*="crimson"] {
+          color: crimson !important;
+      }
+      p {
+          margin-bottom: 15px;
+          line-height: 1.7;
+          font-size: 0.95rem;
+      }
+      /* Style for list items inside the <p> tags for readability */
+      article p:not(:empty) {
+          margin-left: 15px;
+          padding-left: 0;
+      }
+      article p > br { display: none; }
+      
+      /* 5. Footer */
+      footer {
+          background-color: #2b394f;
+          padding: 20px;
+          text-align: center;
+          color: white;
+          margin-top: 40px;
+          font-size: 0.85rem;
+      }
+
+      /* --- Media Query for Desktop/Tablet Layout (768px and wider) --- */
+      @media (min-width: 768px) {
+          /* Header: Align name horizontally next to image */
+          header h1 {
+              flex-direction: row;
+              font-size: 2.5rem;
+              gap: 20px;
+          }
+
+          /* Main Section: Switch to two-column layout */
+          section {
+              flex-direction: row; 
+              align-items: stretch; /* Make columns the same height */
+          }
+          
+          nav {
+              width: 30%; /* Sidebar on desktop: 30% width */
+              flex-shrink: 0;
+          }
+          
+          article {
+              width: 70%; /* Main content on desktop: 70% width */
+          }
+      }
     </style>
 </head>  
 <body>
- <header>
-  <hr>
-<h1> <img src="./image/CamScanner 07-28-2025 14.17.jpg"
-    alt="">
-     C .V <br> Omer Abdulshafi <br>Abdulrahman </h1><hr>
- 
-</header>
-<section> 
-    <nav>
+  <div class="header">
+<hr>
+<img src="./image/CamScanner 07-28-2025 14.17.jpg"
+alt="">
+<h1> 
+C .V <br> Omer Abdulshafi Abdulrahman </h1><hr>
+</div>
+<section>
+<nav>
 <h2>Personal Information</h2>
-<p>Dedicated and passionate public health student with hands-on experience in community health work <br>
-     and outpatient department (OPD) settings.
-    <br>  Proven ability to work with diverse communities and organizations, with a strong commitment to improving health outcomes.
-</p> <br><br>
+<p>Dedicated and passionate public health student with hands-on experience in community health work
+and outpatient department (OPD) settings.
+ Proven ability to work with diverse communities and organizations, with a strong commitment to improving health outcomes.
+</p>
 <h2 style="color: crimson;">Contact Information:</h2>
-<p> Email:omarabdulshafa8@gmail.com <br>
-Phone: +250725191529 <br> 
+<p> Email:omarabdulshafa8@gmail.com
+Phone: +250725191529
 WhatsApp: +250725191529
-</p> <br><br>
+</p>
 <h2>Languages:</h2>
-<p>- Arabic Language. <br> 
-    - Engilsh Language. <br>
-    - Fur Language (Mother Tongue).
+<p>- Arabic Language.
+ - Engilsh Language.- Fur Language (Mother Tongue).
 </p>
 </nav>
 
-    <article>
+<article>
 
 <h2>Education Backgraund</h2>
-<p></p>- University of Zalingei, Faculty of Health Sciences, Department of Public Health (2018-present) <br>
-    - Pursuing a degree in Public Health <br>
-    - Coursework: Epidemiology, Biostatistics, Health Policy, and more . <br>
-- High School Certificate (2018). <br>
-    - Completed secondary education with a strong foundation in sciences. <br>
- - Courses Training : <br>
+<p></p>- University of Zalingei, Faculty of Health Sciences, Department of Public Health (2018-present) 
+- Pursuing a degree in Public Health
+- Coursework: Epidemiology, Biostatistics, Health Policy, and more .
+- High School Certificate (2018).
+- Completed secondary education with a strong foundation in sciences.
+- Courses Training : <br>
 
 - Basics of Computer sciences,
-     Gained proficiency in Microsoft Office and data entry. <br>
+Gained proficiency in Microsoft Office and data entry. <br>
 - Basics of Pharmacology, Developed knowledge of medication management and dosage calculations
 
 </p>
 <h2>Work Experience</h2>
-<p>- Community Health Worker (CHW) , International Rescue Committee (IRC). <br>
-    - Conducted community outreach and health education sessions. <br>
-    - Identified health needs and provided basic health services. <br>
-    - Collaborated with healthcare teams to ensure comprehensive care. <br>
-- Outpatient Department (OPD) Experience <br>
-    - Gained experience in patient care and management <br>
-    - Developed strong communication skills, working with patients and healthcare professionals
+<p>- Community Health Worker (CHW) , International Rescue Committee (IRC).
+ - Conducted community outreach and health education sessions.
+ - Identified health needs and provided basic health services.
+- Collaborated with healthcare teams to ensure comprehensive care.
+- Outpatient Department (OPD) Experience
+- Gained experience in patient care and management
+- Developed strong communication skills, working with patients and healthcare professionals
 
 <h2>Skills</h2>
-    - Basic computer skills (Microsoft Office, data entry). <br>
-    - Basic pharmacology knowledge (medication management, dosage calculations). <br>
-    - Strong communication and interpersonal skills. <br>
-    - Teamwork and collaboration. <br>
-    - Problem-solving and adaptability. <br>
+- Basic computer skills (Microsoft Office, data entry).
+- Basic pharmacology knowledge (medication management, dosage calculations).
+- Strong communication and interpersonal skills.
+- Teamwork and collaboration.
+ - Problem-solving and adaptability.
 </p>
 </article>
 </section>
