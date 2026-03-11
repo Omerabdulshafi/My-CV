@@ -142,7 +142,7 @@
 </head>
 <body id="app-body">
     <!-- Dashboard Toggle (warm) -->
-    <button id="dashboardToggle" class="fixed bottom-6 right-6 z-50 bg-[#b86b3f] text-white px-5 py-3 rounded-full shadow-lg hover:bg-[#8f4f2c] transition flex items-center gap-2">
+    <button id="dashboardToggle" class="fixed bottom-6 right-6 z-50 bg-[#b86b3f] text-white px-5 py-3 rounded-full shadow-lg hover:bg-[#8f4f2c] transition flex items-center gap-2 ">
         <i class="fa-solid fa-sliders"></i> Dashboard
     </button>
 
@@ -317,10 +317,10 @@
             ];
 
             let services = [
-                { title: 'Web Development', icon: 'fa-solid fa-laptop-code', desc: 'Custom responsive websites.' },
-                { title: 'Mobile Apps', icon: 'fa-solid fa-mobile-screen', desc: 'React Native, cross‑platform.' },
-                { title: 'Health Education', icon: 'fa-solid fa-heart-pulse', desc: 'Community outreach & materials.' },
-                { title: 'Database Design', icon: 'fa-solid fa-database', desc: 'MongoDB, SQL structuring.' }
+                { title: 'Web Development', img: './image/web.jpg', desc: 'Custom responsive websites.' },
+                { title: 'Mobile Apps', img: './image/moble.jpg', desc: 'React Native, cross‑platform.' },
+                { title: 'Health Education', img: './image/health.webp', desc: 'Community outreach & materials.' },
+                { title: 'Database Design', img: './image/database.jpg', desc: 'MongoDB, SQL structuring.' }
             ];
 
             let blogs = [
@@ -365,7 +365,7 @@
                 if (!container) return;
                 container.innerHTML = services.map(s => `
                     <div class="uniform-card">
-                        <div class="skill-icon-area"><i class="${s.icon}"></i></div>
+                        <div class="skill-icon-area"><img src="${s.img}" alt="${s.title}" /></div>
                         <div class="card-content">
                             <h3>${s.title}</h3>
                             <p>${s.desc}</p>
